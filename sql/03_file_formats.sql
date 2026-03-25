@@ -1,0 +1,19 @@
+-- ============================================================
+-- SPEAKFLAKE: File Formats
+-- ============================================================
+
+CREATE OR REPLACE FILE FORMAT SPEAKFLAKE_DB.APP.TXT_FORMAT
+  TYPE = 'CSV'
+  RECORD_DELIMITER = 'NONE'
+  FIELD_DELIMITER = 'NONE'
+  SKIP_HEADER = 0
+  ESCAPE = 'NONE'
+  ESCAPE_UNENCLOSED_FIELD = 'NONE'
+  MULTI_LINE = TRUE;
+
+CREATE OR REPLACE FILE FORMAT SPEAKFLAKE_DB.SEMANTIC.YAML_FF
+  TYPE = 'CSV'
+  RECORD_DELIMITER = 'NONE'
+  FIELD_DELIMITER = 'NONE'
+  SKIP_HEADER = 0
+  MULTI_LINE = TRUE;
